@@ -2,8 +2,16 @@ body{
     margin:0;
     padding: 0;
     font-size: 16px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 51px;
 }
-
+* {
+    transition: all .3s ease;
+}
+html{
+    scroll-behavior: smooth;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -20,7 +28,7 @@ nav{
     width: 30px;
     margin: 6px;
 }
-ul{
+.navigation{
     list-style: none;
     display: flex
 }
@@ -35,7 +43,10 @@ li a:hover{
     background-color: #fff;
     color: #882A3D;
 }
-
+.active{
+    background-color: #fff;
+    color: #882A3D;
+}
 .brand-section{
     background-color: #882A3D;
 }
@@ -45,6 +56,11 @@ li a:hover{
 .container{
     width: 80%;
     margin: auto;
+}
+.top-container{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
 }
 
 .home-banner{
@@ -68,13 +84,135 @@ li a:hover{
     outline: none;
     border-radius: 50px;
     border: 2px solid #fff;
-    
     color: #fff;
-    padding: 12px 14px;
+    padding: 14px 16px;
     text-decoration: none;
     margin-top: 12px;
 }
 
 .card{
-    
+    border-radius: 10px;
+    border: 1px solid #C5C5C5;
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+.card:hover{
+    transition: all .3s ease;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transform: scale(.9deg);
+    transform: rotate(3deg);
+}
+.card:active{
+   
+    transform: rotate(0deg);
+}
+.homepage-images{
+   display: flex;
+   justify-content: center;
+   column-gap: 12px;
+   align-items: center;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+}
+.homepage-images .card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+.homepage-images .card .card-bottom{
+    background-color: #464646;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    bottom: 0;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px;
+
+}
+.who-we-are{
+    margin-bottom: 3rem;
+}
+.homepage-images .card .card-bottom p{
+  margin: 10px 20px;
+
+}
+.member-link{
+    border-radius: 20px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.member-link:hover{
+   background-color: #fff;
+    color: #000;
+}
+footer{
+    background-color: #882A3D;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.brand-section-heading{
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+}
+.brand-section-text{
+    margin: 0;
+    color: #fff;
+}
+.about-section{
+    margin-top: 5rem;
+
+}
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5rem;
+}
+.contact-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.2rem;
+}
+.contact-form{
+    width: 40%;
+}
+.contact-item img{
+    width: 50px;
+    height: 50px;
+    margin-right: 26px;
+}
+label{
+    display: block;
+}
+input, textarea {
+    margin-bottom: 3px;
+    width: 100%;
+}
+input{
+    height: 40px;
+    outline: none;
+    border: 2px solid #f3f3f3;
+    border-radius: 6px;
+    padding: 6px;
+}
+textarea{
+    outline: none;
+    border: 2px solid #f3f3f3;
+    border-radius: 6px;
+    padding: 6px;
+}
+.buttons{
+    background-color: #882A3D;
+    color: #fff;
 }
